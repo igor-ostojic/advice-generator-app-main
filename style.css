@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #1f2632;
+  padding-top: 9rem;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    padding-top: 0;
+  }
+}
+
+.container {
+  background-color: #323a49;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.advice-id {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #52ffa8;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
+.pre-animation {
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  opacity: 0;
+}
+
+.advice-text {
+  color: #cee3e9;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.75rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  opacity: 1;
+}
+
+.pre-animation-main {
+  opacity: 0;
+}
+
+.divider {
+  margin-bottom: 2.5rem;
+}
+
+.dice-container {
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: -2rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.dice-container:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #52ffa8 0px 7px 29px 0px;
+          box-shadow: #52ffa8 0px 7px 29px 0px;
+}
+/*# sourceMappingURL=style.css.map */
